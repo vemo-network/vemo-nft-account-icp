@@ -96,4 +96,4 @@ export const WarnedBridges = [
 export const WarnedBridgeNames = ['Across Bridge', 'Hop']
 export const IS_PRODUCTION = false
 
-export const BASE_PATH = '/account'
+export const BASE_PATH = ''

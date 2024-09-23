@@ -141,8 +141,8 @@ export const useWalletsOnchain = () => {
         if (exitsData.length > 0) {
           try {
             exitsData
-              .filter((e) => !!e.value?.data?.length)
-              .forEach((res) => {
+              .filter((e:any) => !!e.value?.data?.length)
+              .forEach((res: any) => {
                 const wallets = res.value?.data;
                 blockFetchConfig = {
                   ...blockFetchConfig,
@@ -150,7 +150,7 @@ export const useWalletsOnchain = () => {
                     wallets[wallets.length - 1].blockNumber + 1,
                 };
               });
-            const mergeData = exitsData.flatMap((res) =>
+            const mergeData = exitsData.flatMap((res: any) =>
               res.value?.data?.map((e: any) => {
                 const chainId = res.value?.chainId;
                 return {
@@ -290,9 +290,9 @@ export const useWalletsOnchain = () => {
   return {
     data: logResponse,
     isLoading: isLoading || loadingOnChainData,
-    refetch : () => {
-      refetch()
-      refetchCallOnchainData()
+    refetch: () => {
+      refetch();
+      refetchCallOnchainData();
     },
   };
 };

@@ -8,7 +8,7 @@ export default defineConfig({
   contracts: [],
   plugins: [
     etherscan({
-      apiKey: process.env.ETHERSCAN_API_KEY!, // Tokenbound SDK, user bjfutureprimitive
+      apiKey: import.meta.env.ETHERSCAN_API_KEY!, // Tokenbound SDK, user bjfutureprimitive
       chainId: mainnet.id,
       // chainId: goerli.id,
 

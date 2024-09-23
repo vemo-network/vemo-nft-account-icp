@@ -8,7 +8,7 @@ import { Collection, IPlatform } from "src/types/platform.type";
 import { Address } from "viem";
 import { ChainId } from "src/configs/constants/chain";
 
-const branch = import.meta.env.VITE_PROJECT_TYPE !== "PROD" ? 'develop':'main'
+const branch = 'main'
 export default class WalletService extends HttpService {
   private static classInstance?: WalletService;
 

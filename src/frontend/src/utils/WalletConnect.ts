@@ -10,10 +10,10 @@ import uniq from 'lodash/uniq'
 
 const SESSION_ADD_EVENT = 'session_add' as Web3WalletTypes.Event // Workaround: WalletConnect doesn't emit session_add event
 const SESSION_REJECT_EVENT = 'session_reject' as Web3WalletTypes.Event // Workaround: WalletConnect doesn't emit session_reject event
-export const IS_DEV = process.env.NODE_ENV === 'development'
-export const IS_PRODUCTION = process.env.NEXT_PUBLIC_IS_PRODUCTION === 'true'
+export const IS_DEV = import.meta.env.NODE_ENV === 'development'
+export const IS_PRODUCTION = import.meta.env.NEXT_PUBLIC_IS_PRODUCTION === 'true'
 export const LS_NAMESPACE = 'SAFE_v2__'
-export const WC_PROJECT_ID = process.env.NEXT_PUBLIC_WC_PROJECT_ID || '06c38aefb19c52e7730cc9d100ccb722'
+export const WC_PROJECT_ID = import.meta.env.NEXT_PUBLIC_WC_PROJECT_ID || '06c38aefb19c52e7730cc9d100ccb722'
 
 export const getEip155ChainId = (chainId: string): string => {
   return `${EIP155}:${chainId}`
