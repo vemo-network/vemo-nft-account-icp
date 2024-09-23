@@ -1,6 +1,6 @@
 {
     "canisters": {
-        "backend": {
+        "vemowallet": {
             "type": "assets",
             "source": ["src/frontend/dist"],
             "build": "npm run build",
@@ -13,10 +13,6 @@
             ],
             "build_assets": "npm run build",
             "metadata": [
-                {
-                    "name": "candid:service",
-                    "path": "src/backend/backend.did"
-                },
                 {
                     "name": "cdk:name",
                     "content": "azle"

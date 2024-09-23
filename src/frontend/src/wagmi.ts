@@ -42,18 +42,18 @@ const transports: any =
         // [arbitrumSepolia.id]: http(),
         [mainnet.id]: http(),
         [arbitrum.id]: http(),
-        [bscChain.id]: http(),
-        [avalancheFuji.id]: http(),
-        [bscTestnet.id]: http(),
+        // [bscChain.id]: http(),
+        // [avalancheFuji.id]: http(),
+        // [bscTestnet.id]: http(),
 
       };
 
 export const wagmiConfig = getDefaultConfig({
-  appName: "Vemo Smart wallet",
-  appDescription: "Vemo Smart wallet",
-  appUrl: "https://app-stg.vemo.network/wallet",
-  // projectId: import.meta.env.NEXT_PUBLIC_WALLETCONNECT_ID!,
-  projectId: "06c38aefb19c52e7730cc9d100ccb722",
+  appName: "Vemo NFT Account",
+  appDescription: "Empowering Web3 Interactions",
+  appUrl: "https://app.vemo.network/account",
+  // projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_ID!,
+  projectId: "81a2b9fa4fe6006d1066a1f2be6772d6",
   chains: supportedChains,
   transports: transports,
   wallets: [
@@ -64,8 +64,6 @@ export const wagmiConfig = getDefaultConfig({
     },
   ],
   ssr: true,
-
-  // walletConnectProjectId: '7fdb54839896ebfa2f839d8bf6952e84',
 });
 
 export const config = createConfig({
