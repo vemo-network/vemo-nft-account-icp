@@ -1,0 +1,12 @@
+.no-arrow {
+  padding: 0 !important;
+}
+
+.no-arrow .ant-popover-arrow {
+  width: 0 !important;
+}
+
+.no-arrow .ant-popover-inner-content {
+  padding: 0 !important;
+  margin: 0 !important;
+}

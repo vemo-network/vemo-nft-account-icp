@@ -1,0 +1,22 @@
+.loading-modal {
+  background-color: #1b1d21;
+  opacity: 0.8;
+}
+
+.loading-overlay .ant-modal-content {
+  background: transparent !important;
+  border: 0px solid transparent !important;
+  border-radius: none !important;
+  box-shadow: none !important;
+}
+
+.loading-overlay .ant-modal-content:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  margin: -2px;
+  border: 0px solid;
+  background: transparent !important;
+  border-radius: inherit;
+}

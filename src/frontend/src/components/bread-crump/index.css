@@ -1,0 +1,4 @@
+.ant-breadcrumb ol{
+  @apply !items-center;
+  font-family: "urbanist";
+}

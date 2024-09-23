@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply rounded-lg;
+    background: #24262c !important;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2c2f37 !important;
+  }
+}
+
+@layer base {
+  html,
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    @apply font-urbanist;
+    color: white;
+  }
+  .container {
+    @apply px-4;
+  }
+  html,
+  body,
+  #root {
+    @apply font-urbanist;
+  }
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+:root {
+  color-scheme: only dark;
+}
+
+html {
+  font-size: 16px;
+}
+
+.ant-btn:hover,
+.ant-btn:focus {
+  background-color: transparent !important;
+}
+
+.ant-carousel .slick-track {
+  margin-bottom: 2rem !important;
+  display: flex;
+  gap: 16px;
+}
+
+#laptop.ant-carousel .slick-list {
+  padding-left: 1.5rem !important;
+  padding-right: 20px !important;
+}
+
+#ecosystem.ant-carousel .slick-list {
+  padding-left: 0rem !important;
+  padding-right: 20px !important;
+}
+
+#laptop.ant-carousel .slick-dots {
+  margin-bottom: 2.5rem !important;
+  margin-left: 68% !important;
+}
+
+#ecosystem.ant-carousel .slick-dots {
+  margin-top: -3.25rem !important;
+  margin-left: 90% !important;
+}
+
+.ant-carousel .slick-dots > li {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 100%;
+}
+
+.ant-carousel .slick-dots > li button {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 100%;
+}
+
+.ant-carousel .slick-dots > .slick-active button:hover,
+.ant-carousel .slick-dots > .slick-active button {
+  background: #0047ff !important;
+}
+.ant-breadcrumb {
+  @apply font-urbanist;
+}
+/* .ant-select-open {
+  color: red !important;
+} */
+.ant-select-item-empty {
+  background-color: #222d46;
+  margin-top: 12px;
+  border-radius: 10px;
+}
+.ant-input-number-input-wrap {
+  width: 100%;
+  z-index: 100;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

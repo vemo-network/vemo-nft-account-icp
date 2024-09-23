@@ -1,0 +1,13 @@
+.ant-modal-content {
+  background: theme("colors.dark-coal-blue") !important;
+  border-radius: theme("borderRadius.lg") !important;
+  border: 0px solid transparent !important;
+}
+
+.ant-modal-header {
+  border-bottom: none !important;
+}
+
+.ant-modal-footer {
+  border-top: none !important;
+}

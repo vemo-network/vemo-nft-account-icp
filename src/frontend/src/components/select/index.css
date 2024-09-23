@@ -1,0 +1,247 @@
+@tailwind components;
+
+@layer components {
+  .suffix-icon {
+    @apply text-grey-blue opacity-80 !important;
+  }
+  .tag {
+    @apply relative px-4 my-0.5;
+  }
+}
+
+.selector-disable .ant-select-selection-item {
+  cursor: not-allowed;
+}
+
+.ant-select-open {
+  @apply !text-[#8A8D97];
+
+  color: #8a8d97 !important;
+  /* opacity: 0.5; */
+  /* @apply flex items-center !text-white text-[14px]; */
+}
+
+.ant-select-focused {
+}
+.ant-select-item-option-disabled {
+  opacity: 0.4 !important;
+}
+
+.ant-select-selection-placeholder {
+  margin-left: 12px;
+  color: white !important;
+  opacity: 0.6 !important;
+  @apply flex items-center !text-xs;
+}
+
+/* fill dark */
+.dark-container .ant-select {
+  background-color: theme("colors.dark.600") !important;
+}
+
+.dark-container .ant-select .ant-select-selection-overflow {
+  background-color: theme("colors.dark.600") !important;
+}
+
+.dark-container .ant-select .ant-select-selector {
+  background-color: theme("colors.dark.600") !important;
+  cursor: pointer !important;
+  width: 100%;
+}
+.dark-container .ant-select-open .ant-select-arrow .default-icon {
+  opacity: 0;
+  display: none;
+}
+.dark-option {
+  background-color: transparent !important;
+}
+
+.dark-option .rc-virtual-list-holder-inner {
+  background-color: theme("colors.dark.600") !important;
+  position: relative !important;
+}
+
+.dark-option .ant-select-item-option {
+  background-color: theme("colors.dark.600") !important;
+  color: white !important;
+  height: 2.5rem;
+  font-size: 13px;
+  @apply flex items-center;
+}
+
+.dark-option .ant-select-item-option-selected {
+  background-color: theme("colors.slate.500") !important;
+  color: white !important;
+}
+
+.dark-option .ant-select-item-option-active {
+  background-color: theme("colors.slate.500") !important;
+  color: white !important;
+}
+
+/* fill dark */
+.dark-container div {
+  @apply flex items-center;
+  color: inherit !important;
+}
+.dark-container .ant-select-open {
+  color: #8a8d97 !important;
+}
+.dark-container .ant-select-item-empty {
+  background: #8a8d97 !important;
+  color: #8a8d97 !important;
+}
+.dark-container .ant-select-selection-item {
+  color: inherit !important;
+  padding-left: 12px;
+}
+.dark-container .ant-select-selection-item .token-balance {
+  display: none !important;
+}
+.dark-container .ant-select-selection-search {
+  inset-inline-start:10px;
+   inset-inline-end: 0px; 
+  /* color: inherit !important; */
+}
+.dark-container .ant-select-selection-placeholder {
+  color: theme("colors.grey.650") !important;
+}
+.dark-container .ant-select {
+  background-color: theme("colors.dark.600") !important;
+}
+
+.dark-container .ant-select .ant-select-selection-overflow {
+  background-color: theme("colors.dark.600") !important;
+}
+
+.dark-container .ant-select .ant-select-selector {
+  background-color: theme("colors.dark.600") !important;
+  cursor: pointer !important;
+  width: 100%;
+  color: inherit !important;
+}
+
+.dark-option {
+  padding: 0px !important;
+  background-color: transparent !important;
+  margin-top: 10px !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dark-option > div {
+  background-color: transparent !important;
+}
+
+.dark-option .rc-virtual-list {
+  margin-top: 10px !important;
+  overflow: hidden !important;
+  border-radius: 0.5rem !important;
+  background-color: transparent !important;
+}
+
+.dark-option .rc-virtual-list-holder-inner {
+  background-color: theme("colors.dark.600") !important;
+}
+
+.dark-option .ant-select-item-option {
+  background-color: theme("colors.slate.500") !important;
+  color: white !important;
+  height: 2.5rem;
+  font-size: 13px;
+  @apply flex items-center;
+}
+
+.dark-option .ant-select-item-option-selected {
+  background-color: theme("colors.charcoal") !important;
+  color: white !important;
+}
+
+.dark-option .ant-select-item-option-active {
+  background-color: theme("colors.charcoal") !important;
+  color: white !important;
+}
+
+/* fill dark blue */
+.dark-blue-container .ant-select {
+  background-color: theme("colors.grey.100") !important;
+}
+
+.dark-blue-container .ant-select .ant-select-selection-overflow {
+  background-color: theme("colors.grey.100") !important;
+}
+
+.dark-blue-container .ant-select .ant-select-selector {
+  background-color: theme("colors.grey.100") !important;
+  cursor: pointer !important;
+  width: 100%;
+}
+
+.dark-blue-option .ant-select-dropdown {
+  box-shadow: none !important;
+
+}
+
+.dark-blue-option {
+  background-color: transparent !important;
+}
+
+.dark-blue-option .rc-virtual-list-holder-inner {
+  background-color: theme("colors.charcoal") !important;
+}
+
+.dark-blue-option .ant-select-item-option {
+  background-color: theme("colors.grey.200") !important;
+  color: white !important;
+  height: 2.5rem;
+  font-size: 13px;
+  @apply flex items-center;
+}
+
+.dark-blue-option .ant-select-item-option-selected {
+  background-color: theme("colors.charcoal") !important;
+  color: white !important;
+}
+
+.dark-blue-option .ant-select-item-option-active {
+  background-color: theme("colors.charcoal") !important;
+  color: white !important;
+}
+
+/* tungsten */
+.tungsten-container div {
+  @apply bg-tungsten flex items-center;
+}
+.tungsten-container .ant-select .ant-select-selection-overflow {
+  background-color: theme("colors.brick-red") !important;
+}
+.tungsten-container .ant-select .ant-select-selector {
+  background-color: theme("colors.tungsten") !important;
+  cursor: pointer !important;
+  width: 100%;
+}
+.tungsten-option {
+  background-color: transparent !important;
+}
+.tungsten-option .rc-virtual-list-holder-inner {
+  background-color: #2d4a6e !important;
+  /* border-radius: 0rem 0rem 0.625rem 0.625rem !important; */
+  /* padding: 0.81rem 0.32rem !important; */
+  margin-top: 0.3rem !important;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.tungsten-option .ant-select-item-option {
+  background-color: #2d4a6e !important;
+  color: white !important;
+  height: 2.5rem;
+  font-size: 13px;
+  @apply flex items-center;
+}
+.tungsten-option .ant-select-item-option-selected {
+  background-color: theme("colors.tungsten") !important;
+  color: white !important;
+}
+.tungsten-option .ant-select-item-option-active {
+  background-color: theme("colors.tungsten") !important;
+  color: white !important;
+}
