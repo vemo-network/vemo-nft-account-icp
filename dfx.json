@@ -1,11 +1,9 @@
 {
     "canisters": {
         "backend": {
-            "type": "custom",
-            "main": "src/backend/backend.ts",
-            "candid": "src/backend/backend.did",
-            "build": "npx azle backend",
-            "wasm": ".azle/backend/backend.wasm",
+            "type": "assets",
+            "source": ["src/frontend/dist"],
+            "build": "npm run build",
             "gzip": true,
             "assets": [
                 [
