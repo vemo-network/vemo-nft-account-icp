@@ -1,32 +1,13 @@
-# ICP Development Environment with Azle and React
-
-This template gives you everything you need to build a full-stack Web3 application on the [Internet Computer](https://internetcomputer.org/).
-It includes a frontend built with Vite and React, and a backend written in JS/TS (Azle).
-
-## Get started with one click:
-### Locally:
-
-Make sure you have you have the latest version of Docker (e.g. >25) and VS Code installed and running, then click the button below
-
-[![Open locally in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/fxgst/azle-react)
-
-### In your browser:
-
-In Gitpod 
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/fxgst/azle-react/)
-
-or GitHub Codespaces
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/fxgst/azle-react/?quickstart=1)
-
+# Vemo NFT Account Frontend
+This is FE of NFT Account module, refer here for more information https://docs.vemo.network/
 
 ## 🚀 Develop
+Run npm run dev in your terminal, and then open localhost:5173 in your browser.
+Once the webpage has loaded, changes made to files inside the src/ directory (e.g. src/App.tsx) will automatically update the webpage.
+If making local changes to the SDK, note that npm build must be run inside the tokenbound-sdk/packages/sdk directory before the changes will be reflected in this example implementation.
 
-When the editor opened, run the following commands to start a local ICP node and deploy the canister smart contract:
+## 🚀 Deploy
 
-```bash
-dfx start --clean # Start a local ICP node
 # In a new terminal window:
 dfx deploy # Deploy smart contract locally
 ```
