@@ -51,7 +51,7 @@
 // import { erc20Abi } from 'viem'
 // import { CreateAccountParams, TokenboundClient } from '../'
 
-// export const pool = Number(process.env.VITEST_POOL_ID ?? 1)
+// export const pool = Number(import.meta.env.VITEST_POOL_ID ?? 1)
 
 // const TIMEOUT = 60000 // default 10000
 // const ANVIL_USER_0 = getAddress(ANVIL_ACCOUNTS[0].address)

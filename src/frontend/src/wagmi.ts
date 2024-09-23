@@ -52,7 +52,7 @@ export const wagmiConfig = getDefaultConfig({
   appName: "Vemo Smart wallet",
   appDescription: "Vemo Smart wallet",
   appUrl: "https://app-stg.vemo.network/wallet",
-  // projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_ID!,
+  // projectId: import.meta.env.NEXT_PUBLIC_WALLETCONNECT_ID!,
   projectId: "06c38aefb19c52e7730cc9d100ccb722",
   chains: supportedChains,
   transports: transports,

@@ -1,43 +1,38 @@
-import { fileURLToPath, URL } from 'url';
-import react from '@vitejs/plugin-react';
-import { defineConfig } from 'vite';
-import environment from 'vite-plugin-environment';
-import dotenv from 'dotenv';
+import path, { resolve } from "path";
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 
-dotenv.config({ path: '../../.env' });
-
+// https://vitejs.dev/config/
 export default defineConfig({
   build: {
-    emptyOutDir: true,
+    target: "es2020",
   },
   optimizeDeps: {
     esbuildOptions: {
-      define: {
-        global: "globalThis",
-      },
+      target: "es2020",
     },
   },
-  server: {
-    proxy: {
-      "/api": {
-        target: "http://127.0.0.1:4943",
-        changeOrigin: true,
-      },
-    },
-  },
-  plugins: [
-    react(),
-    environment("all", { prefix: "CANISTER_" }),
-    environment("all", { prefix: "DFX_" }),
-  ],
+  // define: {
+  //   global: "globalThis",
+  // },
   resolve: {
-    alias: [
-      {
-        find: "declarations",
-        replacement: fileURLToPath(
-          new URL("../declarations", import.meta.url)
-        ),
-      },
-    ],
+    alias: {
+      process: "process/browser",
+      util: "util",
+      "@components": path.resolve(__dirname, "src/components"),
+      src: path.resolve(__dirname, "src/"),
+      "@": path.resolve(__dirname, "src/"),
+      "@store": path.resolve(__dirname, "src/store"),
+      "@context": path.resolve(__dirname, "src/context/"),
+
+    },
   },
+  plugins: [react()],
+  server: {
+    port: 3000,
+  },
+  preview: {
+    port: 3000,
+  },
+  base: "/account",
 });
