@@ -1,10 +1,6 @@
 # Vemo NFT Account Frontend
 This is FE of NFT Account module, refer here for more information https://docs.vemo.network/
-
-## 🚀 Develop
-Run npm run dev in your terminal, and then open localhost:5173 in your browser.
-Once the webpage has loaded, changes made to files inside the src/ directory (e.g. src/App.tsx) will automatically update the webpage.
-If making local changes to the SDK, note that npm build must be run inside the tokenbound-sdk/packages/sdk directory before the changes will be reflected in this example implementation.
+ICP prod link: https://2lb5e-kqaaa-aaaag-ameva-cai.icp0.io/
 
 ## 🚀 Deploy
 
